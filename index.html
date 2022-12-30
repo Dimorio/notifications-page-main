@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Work+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Notifications page</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div class="content">
+          <header class="flex-wrapper">
+            <div class="left-cons">
+              <h2>Notifications</h2>
+              <button class="noti">3</button>
+            </div>
+            <button id="marked" onclick="RemoveShown()">
+              Mark all as read
+            </button>
+          </header>
+          <main>
+            <div class="column">
+              <div class="items bgblue">
+                <div class="img-container">
+                  <img src="assets/images/avatar-mark-webber.webp" alt="" />
+                </div>
+                <div class="item-content">
+                  <p class="red" id="wait">
+                    <strong>Mark Webber</strong> reacted to your recent post
+                    <u>My first tournament today!</u>
+                  </p>
+                  <div class="ago">1m ago</div>
+                </div>
+              </div>
+              <div class="items bgblue">
+                <div class="img-container">
+                  <img src="assets/images/avatar-angela-gray.webp" alt="" />
+                </div>
+                <div class="item-content">
+                  <p class="red" id="wait">
+                    <strong>Angela Gray</strong> followed you
+                  </p>
+                  <div class="ago">5m ago</div>
+                </div>
+              </div>
+              <div class="items bgblue">
+                <div class="img-container">
+                  <img src="assets/images/avatar-jacob-thompson.webp" alt="" />
+                </div>
+                <div class="item-content">
+                  <p class="red" id="wait">
+                    <strong>Jacob Thompson</strong> has joined your group
+                    <u>Chess club</u>
+                  </p>
+                  <div class="ago">1 day ago</div>
+                </div>
+              </div>
+              <div class="items">
+                <div class="img-container">
+                  <img
+                    src="assets/images/avatar-rizky-hasanuddin.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="item-content">
+                  <p class="none">
+                    <strong>Rizky Hasanuddin</strong> sent you a private message
+                    <u onclick="OpenMessage()" class="unsee">Click to see</u>
+                  </p>
+                  <div class="ago">5 days ago</div>
+                  <div id="message">
+                    <p class="none">
+                      Hello, thanks for setting up the Chess Club. I've been a
+                      member for a few weeks now and I'm already having lots of
+                      fun and improving my game.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="items">
+                <div class="img-container">
+                  <img src="assets/images/avatar-kimberly-smith.webp" alt="" />
+                </div>
+                <div class="item-content ola">
+                  <div class="content-wan">
+                    <p class="none">
+                      <strong>Kimberly Smith </strong> commented on your picture
+                    </p>
+                    <div class="ago">2 weeks ago</div>
+                  </div>
+                  <div class="img">
+                    <img
+                      src="assets/images/image-chess.webp"
+                      alt=""
+                      style="width: 50px"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="items">
+                <div class="img-container">
+                  <img src="assets/images/avatar-nathan-peterson.webp" alt="" />
+                </div>
+                <div class="item-content">
+                  <p class="none">
+                    <strong>Nathan Peterson</strong> reacted to your post
+                    <u
+                      >5 end-game strategies to<br />
+                      increase your win rate</u
+                    >
+                  </p>
+                  <div class="ago">2 weeks ago</div>
+                </div>
+              </div>
+              <div class="items">
+                <div class="img-container">
+                  <img src="assets/images/avatar-anna-kim.webp" alt="" />
+                </div>
+                <div class="item-content">
+                  <p class="none">
+                    <strong>Anna Kim</strong> left the group
+                    <u>Chess Club</u>
+                  </p>
+                  <div class="ago">2 weeks ago</div>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+      </div>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/Dimorio">d'morio</a>.
+      </div>
+    </div>
+  </body>
+</html>

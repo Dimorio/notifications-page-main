@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: 'Poppins', sans-serif;
+}
+button{
+    border: none;
+    background-color: transparent
+    ;
+}
+img{
+    max-width: 100%;
+    object-fit: contain;
+}
+u{
+    color: rgb(3, 3, 75);
+    text-decoration: none;
+    text-transform:inherit;
+    font-weight: 600;
+    cursor: pointer;
+transition: 300ms ease-in-out;
+
+}
+strong{
+    color: black;
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+    font-weight: 600;
+
+
+}
+u:hover{
+    color: darkblue;
+}
+strong:hover{
+    color: darkblue;
+
+}
+.img-container img{
+    width: 60px;
+}
+body{
+   width: 100%;
+   height: 100vh;
+}
+main{
+    width: 100%;
+    padding: 10px;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background: white;
+    .wrapper{
+        max-width: 901px;
+        margin: auto;
+        padding: 2.5rem 1rem;
+        height: 100%;
+        // min-height: 100vh;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+    }
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.flex-wrapper, .left-cons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+ .left-cons button{
+    margin-left: 1rem;
+    background-color: blue;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 5px;
+ }
+ .column {
+    display: flex;
+    flex-direction: column;
+    flex-flow: column wrap;
+    gap: 2rem;
+}
+.items{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+.red::after {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin-left: 3px;
+    margin-bottom: 3px;
+    border-radius: 7.5px;
+    background-color: red;
+}
+.item-content .none::after{
+    content: none;
+}
+#message{
+    margin-top: .5rem;
+    padding: 10px 10px;
+    background-color: lightblue;
+    color: rgba(13, 3, 67, 0.5);
+    display: none;
+    cursor: pointer;
+    width: 70%;
+    transition: background-color 300ms ease;
+}
+#message.show{
+    display: block;
+}
+#message:hover{
+    background-color: transparent;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+#marked{
+    color: black;
+    font-weight: 600;
+    cursor: pointer;
+}
+#marked:hover{
+    color: darkblue;
+    transition: 300ms ease-in-out;
+
+
+}
+.ola{
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    flex-direction: column;
+}
+.content-wan{
+    display: flex; 
+    flex-direction: column;
+}
+.bgblue{
+    background-color: rgba(173, 216, 230,0.3);
+    border-radius: 5px;
+    padding: 5px 5px;
+}
+.bgremove{
+    background-color: transparent;
+    
+}
+.left-cons h2{
+    font-size: 1.3rem;
+}
+
+@media only screen and (min-width: 480px){
+    .ola{
+        flex-direction: column;
+    }
+    .left-cons h2{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .ola{
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .ola{
+        flex-direction: row;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .ola{
+        flex-direction: row;
+    }
+}
